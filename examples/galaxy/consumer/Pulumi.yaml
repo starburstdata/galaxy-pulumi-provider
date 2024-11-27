@@ -1,0 +1,16 @@
+name: consume-galaxy
+runtime: yaml
+
+plugins:
+  providers:
+    - name: galaxy
+      path: ..
+
+resources:
+  managedCluster:
+    type: galaxy:Cluster
+    properties:
+      name: pachutest
+      cloudRegionId: aws-us-east1
+      minWorkers: 1
+      maxWorkers: 5

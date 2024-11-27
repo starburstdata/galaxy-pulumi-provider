@@ -12,4 +12,4 @@ resources:
     properties:
       path: ${pulumi.cwd}/managed.txt
       content: |
-        An important piece of information
+        An important piece of information2
